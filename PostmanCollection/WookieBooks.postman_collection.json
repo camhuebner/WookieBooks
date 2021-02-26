@@ -44,7 +44,75 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Create book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:50607/books?title=The Life of a Wookie&description=The everyday life stories of a Wookie&author=R2-D2&coverImage=https://starwarsblog.starwars.com/wp-content/uploads/2016/10/Screen-Shot-2016-10-31-at-12.49.26-PM-e1478650870221-1536x864.jpg&price=22.99",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "50607",
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "The Life of a Wookie"
+								},
+								{
+									"key": "description",
+									"value": "The everyday life stories of a Wookie"
+								},
+								{
+									"key": "author",
+									"value": "R2-D2"
+								},
+								{
+									"key": "coverImage",
+									"value": "https://starwarsblog.starwars.com/wp-content/uploads/2016/10/Screen-Shot-2016-10-31-at-12.49.26-PM-e1478650870221-1536x864.jpg"
+								},
+								{
+									"key": "price",
+									"value": "22.99"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Feb 2021 21:24:38 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "200"
+				}
+			]
 		},
 		{
 			"name": "Read books",
@@ -63,7 +131,53 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Read books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:50607/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "50607",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Feb 2021 21:25:47 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"title\": \"Journey of a Wookie\",\n        \"description\": \"The life story of the famous Chewbacca\",\n        \"author\": \"Han Solo\",\n        \"coverImage\": \"https://starwarsblog.starwars.com/wp-content/uploads/2018/03/joonas-suotamo-chewbacca-rian-johnson-bts-tall.jpg\",\n        \"price\": 25.99\n    },\n    {\n        \"title\": \"Wookie History\",\n        \"description\": \"The history of the Wookie\",\n        \"author\": \"C-3PO\",\n        \"coverImage\": \"https://starwarsblog.starwars.com/wp-content/uploads/2016/04/Header.jpg\",\n        \"price\": 19.99\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Update book",
@@ -104,7 +218,75 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Update book",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:50607/books?title=The Life of a Wookie&description=The everyday life stories of a Wookie&author=R2-D2&coverImage=https://starwarsblog.starwars.com/wp-content/uploads/2016/10/Screen-Shot-2016-10-31-at-12.49.26-PM-e1478650870221-1536x864.jpg&price=50.99",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "50607",
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "The Life of a Wookie"
+								},
+								{
+									"key": "description",
+									"value": "The everyday life stories of a Wookie"
+								},
+								{
+									"key": "author",
+									"value": "R2-D2"
+								},
+								{
+									"key": "coverImage",
+									"value": "https://starwarsblog.starwars.com/wp-content/uploads/2016/10/Screen-Shot-2016-10-31-at-12.49.26-PM-e1478650870221-1536x864.jpg"
+								},
+								{
+									"key": "price",
+									"value": "50.99"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Feb 2021 21:26:22 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "200"
+				}
+			]
 		},
 		{
 			"name": "Delete Book",
@@ -129,7 +311,59 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Delete Book",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:50607/books?title=The Life of a Wookie",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "50607",
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "The Life of a Wookie"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Feb 2021 21:26:31 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "200"
+				}
+			]
 		}
 	]
 }
